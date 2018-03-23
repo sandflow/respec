@@ -24,22 +24,17 @@ var header = hyperHTML`
   <a href='https://smpte.org' class='logo'>
   <img
         alt="Society of Motion Picture and Television Engineers"
-        width="137px"
-        height="88px"
+        width="137"
+        height="88"
         src='https://sandflow.com/public/smpte/smpte-logo.jpg'>
     </a>
   
-  
-    
-
-    
-    
   
   <header>
   <p class='doc-type'>SMPTE ${conf.docTypeFull}</p>
   <h1 class='title p-name' id='title'>${conf.title}</h1>
   ${conf.docStatus !== 'PUB' ? hyperHTML`
-	 <p class='spec-status'>${conf.docStatusFull} <time class='dt-published' datetime='${conf.modifiedDate}'>${conf.modifiedDateFull}</time></p>
+	 <p class='spec-status'>${conf.docStatusFull} <time class='dt-published' datetime='${conf.modifiedDateFull}'>${conf.modifiedDateFull}</time></p>
 	` :
   ""}
   </header>

@@ -112,7 +112,12 @@ export function run(conf) {
 
   conf.modifiedDate = new Date(document.lastModified);
 
-  conf.modifiedDateFull = conf.modifiedDate.toUTCString();
+  conf.modifiedDateFull = conf.modifiedDate.toISOString(); /*conf.modifiedDate.getUTCFullYear()
+                            + "-" + (conf.modifiedDate.getUTCMonth() + 1)
+                             +"-"+ conf.modifiedDate.getUTCDate()
+                             + "T" + conf.modifiedDate.getUTCHours()
+                             + ":" + conf.modifiedDate.getUTCMinutes()
+                             + ":" + conf.modifiedDate.getUTCSeconds();*/
   
   conf.modifiedYearFull = conf.modifiedDate.getUTCFullYear().toString();
 
@@ -125,8 +130,6 @@ export function run(conf) {
       pub("error", "Publication year required: `publishYear`");
 
     }
-
-    conf.publishYear = conf.publishDate.getUTCFullYear();
 
   } else {
 
