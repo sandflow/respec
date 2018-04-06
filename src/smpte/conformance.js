@@ -11,7 +11,7 @@ export function run(conf, doc, cb) {
     
     confo = hyperHTML`
       <section id='conformance'>
-      <h2>Conformance</h2>
+      <h2>Conformance Notation</h2>
       <p>
       Normative text is text that describes elements of the design that are indispensable or contains the conformance language keywords: "shall", "should", or "may". Informative text is text that is potentially helpful to the user, but not indispensable, and can be removed, changed, or added editorially without affecting interoperability. Informative text does not contain any conformance keywords.
       </p>
