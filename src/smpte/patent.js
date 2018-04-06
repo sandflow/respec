@@ -10,7 +10,7 @@ export async function run(conf) {
 
 		if (conf.isPatentNotice) {
 
-			notice = `
+			notice = hyperHTML`
           <p>
            SMPTE draws attention to the fact that it is claimed that compliance with this Standard may involve the use of one or more patents or other intellectual property rights (collectively,
            "IPR"). The Society takes no position concerning the evidence, validity, or scope of this IPR.</p>
@@ -20,7 +20,7 @@ export async function run(conf) {
 
 		} else {
 
-			notice = `
+			notice = hyperHTML`
        <p>
            At the time of publication no notice had been received by SMPTE claiming patent rights essential to the implementation of this Engineering Document. However, attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. SMPTE shall not be held responsible for identifying any or all such patent rights.
           </p>
@@ -35,7 +35,7 @@ export async function run(conf) {
       </section>
     `;
 
-		document.body.insertBefore(fw, document.body.firstChild);
+		document.body.insertBefore(patent, document.body.firstChild);
 
 	}
 

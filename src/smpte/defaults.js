@@ -70,6 +70,10 @@ export function run(conf) {
 
     conf.docTypeFull = "Administrative Guideline";
 
+  } else if (conf.docType === "ST") {
+
+    conf.docTypeFull = "Standard";
+
   } else {
 
     pub("error", `Unknown document status: ${conf.docType}`);
@@ -85,6 +89,10 @@ export function run(conf) {
   if (conf.managingGroup === "ST") {
 
     conf.managingGroupFull = "Standards Committee";
+
+  } else if (conf.managingGroup === "32NF") {
+
+    conf.managingGroupFull = "Technology Committee 32NF";
 
   } else {
 

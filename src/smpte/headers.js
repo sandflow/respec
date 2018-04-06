@@ -38,6 +38,11 @@ var header = hyperHTML`
 	` :
   ""}
   </header>
+  
+  ${conf.docStatus !== 'PUB' ? hyperHTML`
+   <div id='watermark'>NOT FOR PUBLICATION</div>
+   ` :
+  ""}
 
   <p class='copyright'>Copyright © ${conf.modifiedYearFull} by the Society Of Motion Picture And Television Engineers, 445 Hamilton Avenue., White Plains, NY 10601.</p>
   
